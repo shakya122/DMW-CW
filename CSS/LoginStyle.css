@@ -1,0 +1,116 @@
+
+body {
+    background: linear-gradient(135deg, #0a0f24, #162447); /* Dark Sporty Theme */
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.box {
+    background: rgba(255, 255, 255, 0.12); 
+    backdrop-filter: blur(10px); /* Frosted Glass Effect */
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    width: 400px;
+    text-align: center;
+}
+
+
+.top-header {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    margin-top: 18px;
+    position: relative;
+}
+
+.input {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.input:focus {
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid #29a19c;
+}
+
+.input::placeholder {
+    color: #ddd;
+}
+
+.submit {
+    background: linear-gradient(135deg, #ff7f50, #ff4500); /* Vibrant Orange */
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+.submit:hover {
+    background: linear-gradient(135deg, #ff4500, #ff7f50);
+    transform: scale(1.05);
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.bottom a {
+    color: #29a19c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.bottom a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    display: none;
+    background: rgba(255, 69, 58, 0.9);
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 12px;
+    box-shadow: 0 0 15px rgba(255, 69, 58, 0.8);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
